@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'poppins', sans-serif;
 }
 /*banner*/
 #banner {
@@ -57,4 +58,18 @@
 }
 .banner-btn a:hover{
     color: #000;
+}
+/*sideNav*/
+#sideNav {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 250px;
+    background: #009688;
+    z-index: 2;
+}
+nav ul li{
+    list-style: none;
+    margin: 50px 20px;
 }
