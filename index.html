@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Poppins:wght@100&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Website vé máy bay</title>
 </head>
 
@@ -31,15 +32,75 @@
     <section id="sideNav">
         <nav>
             <ul>
-                <li> <a href="#"></a>Home</li>
-                <li> <a href="#"></a>Features</li>
-                <li> <a href="#"></a>Services</li>
-                <li> <a href="#"></a>Testimonial</li>
-                <li> <a href="#"></a>Meet Us</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Testimonial</a></li>
+                <li><a href="#">Meet Us</a></li>
             </ul>
         </nav>
     </section>
+    <div id="menuBtn">
+        <img src="image/menu.png" id="menu">
+    </div>
     <!--End sideNav-->
+    <!--features-->
+    <section id="feature">
+        <div class="title-text">
+            <p>FEATURES</p>
+            <h1>Why Choose Us</h1>
+        </div>
+        <div class="feature-box">
+            <div class="features">
+                <h1>Ecperienced Sraff</h1>
+                <div class="features-desc">
+                    <div class="feature-icon">
+                        <i class="bi bi-shield-shaded"></i>
+                    </div>
+                    <div class="feature-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sed est sit amet feugiat. Nulla eu risus diam.</p>
+                    </div>
+                </div>
+                <h1>Pre Booking Online</h1>
+                <div class="features-desc">
+                    <div class="feature-icon">
+                        <i class="bi bi-check2-square"></i>
+                    </div>
+                    <div class="feature-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sed est sit amet feugiat. Nulla eu risus diam.</p>
+                    </div>
+                </div>
+                <h1>Affirdable Cost</h1>
+                <div class="features-desc">
+                    <div class="feature-icon">
+                        <i class="bi bi-currency-euro"></i>
+                    </div>
+                    <div class="feature-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sed est sit amet feugiat. Nulla eu risus diam.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="features-img">
+                <img src="image/barber-man.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!--end feature-->
+    <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var siderNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+        sideNav.style.right = "-250px"
+        menuBtn.onclick = function(){
+            if(sideNav.style.right== "-250px"){
+                sideNav.style.right = "0";
+                menu.src = "image/close.png";
+            }else{
+                sideNav.style.right ="-250px";
+                menu.src ="image/menu.png"
+            }
+        }
+    </script>
 </body>
 
 </html>
